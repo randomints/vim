@@ -30,10 +30,10 @@ return {
     -- Top Pickers & Explorer
     { "<leader><space>", function() Snacks.picker.smart() end, desc = "Smart Find Files" },
     { "<leader>:", function() Snacks.picker.command_history() end, desc = "Command History" },
---    { "<C-n>", function() Snacks.explorer() end, desc = "File Explorer" },
+   { "<C-n>", function() Snacks.explorer() end, desc = "File Explorer" },
 
     -- find
- --   { "<C-p>", function() Snacks.picker.files() end, desc = "Find Files" },
+    { "<C-p>", function() Snacks.picker.files() end, desc = "Find Files" },
 --    { "<leader>fp", function() Snacks.picker.projects() end, desc = "Projects" },
 --    { "<leader>fr", function() Snacks.picker.recent() end, desc = "Recent" },
 
@@ -55,7 +55,7 @@ return {
     -- Grep
 --    { "<leader>sb", function() Snacks.picker.lines() end, desc = "Buffer Lines" },
 --    { "<leader>sB", function() Snacks.picker.grep_buffers() end, desc = "Grep Open Buffers" },
---    { "<leader>sg", function() Snacks.picker.grep() end, desc = "Grep" },
+   { "<leader>sg", function() Snacks.picker.grep() end, desc = "Grep" },
 --    { "<leader>sw", function() Snacks.picker.grep_word() end, desc = "Visual selection or word", mode = { "n", "x" } },
 
     -- search
@@ -103,7 +103,7 @@ return {
     { "<leader>gB", function() Snacks.gitbrowse() end, desc = "Git Browse", mode = { "n", "v" } },
     { "<leader>gg", function() Snacks.lazygit() end, desc = "Lazygit" },
     { "<leader>dn", function() Snacks.notifier.hide() end, desc = "Dismiss All Notifications" },
-    { "<c-/>",      function() Snacks.terminal() end, desc = "Toggle Terminal" },
+    { "<C-/>",      function() Snacks.terminal() end, desc = "Toggle Terminal" },
 --    { "<c-_>",      function() Snacks.terminal() end, desc = "which_key_ignore" },
 --    { "]]",         function() Snacks.words.jump(vim.v.count1) end, desc = "Next Reference", mode = { "n", "t" } },
 --    { "[[",         function() Snacks.words.jump(-vim.v.count1) end, desc = "Prev Reference", mode = { "n", "t" } },

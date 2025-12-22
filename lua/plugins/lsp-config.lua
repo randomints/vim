@@ -36,7 +36,7 @@ return {
 				},
 				capabilities = capabilities,
 			})
-			vim.lsp.config.html.setup({
+			lspconfig.html.setup({
 				capabilities = capabilities,
 			})
 			vim.lsp.config.lua_ls.setup({
