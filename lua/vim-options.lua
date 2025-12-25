@@ -6,15 +6,15 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 vim.api.nvim_create_autocmd("LspAttach", {
-  desc = "LSP keymaps",
-  callback = function(ev)
-    local opts = { buffer = ev.buf, silent = true }
+	desc = "LSP keymaps",
+	callback = function(ev)
+		local opts = { buffer = ev.buf, silent = true }
 
-    vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, opts)
-    vim.keymap.set("n", "<leader>gr", vim.lsp.buf.rename, opts)
-    vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, opts)
-    vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
-  end,
+		vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, opts)
+		vim.keymap.set("n", "<leader>gr", vim.lsp.buf.rename, opts)
+		vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, opts)
+		vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
+	end,
 })
 
 vim.opt.undofile = true
@@ -29,5 +29,5 @@ vim.keymap.set("n", "N", "Nzzzv", { noremap = true, silent = true })
 
 vim.lsp.inlay_hint.enable(true)
 
-vim.keymap.set("n", "q", "q", { noremap = true })
-
+vim.keymap.set("v", "<leader>y", '"+y')
+vim.api.nvim_set_keymap("n", "<Leader>p", ":VimtexView<CR>", { noremap = true, silent = true })

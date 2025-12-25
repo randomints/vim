@@ -45,7 +45,7 @@ return {
 			vim.lsp.config.jsonls.setup({
 				capabilities = capabilities,
 			})
-			vim.lsp.config.eslint_lsp.setup({
+			vim.lsp.config.eslint.setup({
 				capabilities = capabilities,
 			})
 			vim.lsp.config.ts_ls.setup({
